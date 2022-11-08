@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,900&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+.sign {
+  max-width: 1600px;
+  width: 100%;
+  padding: 60px 0px;
+  min-width: 300px;
+  margin: auto;
+  &-header {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0px;
+    &__tittle {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 52px;
+      line-height: 62px;
+      text-align: center;
+      letter-spacing: -2px;
+      color: #090914;
+    }
+    &__subtittle {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+      color: #52525b;
+      max-width: 494px;
+      width: 100%;
+      margin: 18px auto 0px;
+    }
+  }
+  &-card {
+    max-width: 533px;
+    width: 95%;
+    border: 1px solid rgba(33, 32, 32, 0.096);
+    margin: 32px auto 0px;
+    border-radius: 10px;
+    &-form {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px 0px;
+      text-align: center;
+
+      &__input {
+        font-family: 'Poppins';
+        display: block;
+        border-radius: 10px; 
+        border: 1px solid rgba(33, 32, 32, 0.096);
+        padding: 15px 0px;
+        text-align: center;
+        width: 100%;
+        margin: 15px auto;
+      }
+      &-checkcard {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &__check {
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          color: #090914;
+        }
+      }
+
+      &__forget {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #090914;
+        text-decoration: none;
+        display: inline-flex;
+        &:hover {
+          color: #0000ff;
+        }
+      }
+
+      &__singbtn,
+      &-googlebtn {
+        text-decoration: none;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: -0.2px;
+        padding: 15px 0px;
+        text-align: center;
+        width: 100%;
+        border-radius: 5px;
+        margin: 20px 0px;
+        display: block;
+        transition: all 0.5s;
+      }
+      &__singbtn {
+        color: #ffffff;
+        background-color: rgba(37, 99, 235, 1);
+
+        &:hover {
+          background-color: rgb(0, 66, 209);
+        }
+      }
+      &-googlebtn {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #1e293b;
+        &:hover {
+          background-color: rgba(148, 160, 189, 0.157);
+        }
+        &__svg {
+          width: 24.39px;
+          margin: 0px 10px;
+        }
+      }
+      &__footer {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #71717a;
+        padding: 10px 0px 0px;
+        &__link {
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 22px;
+          text-align: center;
+          padding: 0px 0px 0px 8px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .sign { 
+    padding: 40px 0px;
+    &-header { 
+      padding: 10px 10px;
+      &__tittle { 
+        font-size: 33px;
+        line-height: 44px; 
+      }
+      &__subtittle { 
+        line-height: 27px; 
+        margin: 15px auto 0px;
+      }
+    }
+    &-card {
+       
+      &-form { 
+        padding: 5px 0px; 
+
+        &__input { 
+          border: 1px solid rgba(33, 32, 32, 0.096);
+          padding: 10px 0px; 
+        } 
+
+        &__singbtn,
+        &-googlebtn { 
+          padding: 10px 0px;
+        }
+          
+      }
+    }
+  }
+}
